@@ -1,9 +1,8 @@
-# 👨‍💻 SW캠프 HTML 개인프로젝트
-<hr/>
-## Development
-<hr/>   
-### Page routing path
-### Commit Message Convention
+# 👨‍💻 SW캠프 HTML 개인프로젝트   
+## Development   
+### Page routing path   
+### Commit Message Convention   
+
 ```
 Feat : 새로운 기능 추가
 Fix : 버그 수정
