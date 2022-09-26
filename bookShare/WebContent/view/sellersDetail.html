@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seller Detail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/common/commonMenu.css">
+<link rel="stylesheet" href="../css/sellersDetail/sellersDetail.css">
+<link rel="stylesheet" href="../css/sellersDetail/sellerCarosel.css">
+</head>
+<!-- 메뉴바 -->
+<header>
+	<div class="menu">
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="http://www._____.com/Travel">책 판매</a></li>
+				<li><a href="http://www._____.com/Contact">책 나눔</a></li>
+				<li><a href="http://www._____.com/Travel">책 기부하기</a></li>
+				<li><a href="http://www._____.com/Contact">책 처분하기</a></li>
+			</ul>
+			<a id="pull" href="#"></a>
+		</nav>
+	</div>
+</header>
+<body>
+	<!-- 로고 -->
+	<div class="logo" style="text-align: center; cursor: pointer;"
+		onclick="goToMain()">
+		<img src="../images/aviemua.png" />
+	</div>
+
+	<!-- 책 상세사진 캐로셀 -->
+	<div class="slideboxBackGround">
+		<div class="slidebox">
+			<input type="radio" name="slide" id="slide01" checked> <input
+				type="radio" name="slide" id="slide02"> <input type="radio"
+				name="slide" id="slide03"> <input type="radio" name="slide"
+				id="slide04">
+			<ul class="slidelist">
+				<li class="slideitem"><a><img src="../images/1.jpg"></a>
+				</li>
+				<li class="slideitem"><a><img src="../images/2.jpg"></a>
+				</li>
+				<li class="slideitem"><a><img src="../images/3.jpg"></a>
+				</li>
+				<li class="slideitem"><a><img src="../images/slide04.jpg"></a>
+				</li>
+
+			</ul>
+			<div class="slide-control">
+				<div class="control01">
+					<label for="slide04" class="prev"></label> <label for="slide02"
+						class="next"></label>
+				</div>
+				<div class="control02">
+					<label for="slide01" class="prev"></label> <label for="slide03"
+						class="next"></label>
+				</div>
+				<div class="control03">
+					<label for="slide02" class="prev"></label> <label for="slide04"
+						class="next"></label>
+				</div>
+				<div class="control04">
+					<label for="slide03" class="prev"></label> <label for="slide01"
+						class="next"></label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 판매자 정보 -->
+	<div class="sellerProfile">
+		<div class="sellerProfileImg">
+			<img src="../images/defaultProfile.png" />
+		</div>
+		<div class="sellerProfileContnet">
+			<div class="sellerProfileContnet_1">밍지지</div>
+			<div class="sellerProfileContnet_1">화성시 장지동</div>
+		</div>
+	</div>
+	<hr class="one" />
+
+	<!-- 물품 설명 -->
+	<div class="sellingBookContent">
+		<div class="sellingBookContent2">
+			<div class="sellerProfileContnet2_1">
+				<div class="sellerProfileContnet2_2">
+					<h3>잃어버린 시간을 찾아서</h3>
+				</div>
+				<div class="sellerProfileContnet2_2">마르셀 뒤펭</div>
+				<div class="sellerProfileContnet2_2">민음사</div>
+			</div>
+			<div class="sellerProfileContnet2_1">
+				<div class="sellerProfileContnet2_2">
+					<h3>상태</h3>
+				</div>
+				<div class="sellerProfileContnet2_2">최상</div>
+			</div>
+			<div class="sellerProfileContnet2_1">
+				<div class="sellerProfileContnet2_2">
+					<h3>구입일</h3>
+				</div>
+				<div class="sellerProfileContnet2_2">2020-07-08</div>
+			</div>
+			<div class="sellerProfileContnet2_1">
+				<div class="sellerProfileContnet2_2">
+					<h3>구입가</h3>
+				</div>
+				<div class="sellerProfileContnet2_2">20,000 원</div>
+			</div>
+			<div class="sellerProfileContnet2_1">
+				<div class="sellerProfileContnet2_2">
+					<h3>판매가</h3>
+				</div>
+				<div class="sellerProfileContnet2_2">10,000 원</div>
+			</div>
+			<div class="sellerProfileContnet2_1">
+				<div class="sellerProfileContnet2_2">
+					<h3>제품 설명</h3>
+				</div>
+				<div class="sellerProfileContnet2_2"
+					style="overflow: scroll; width: 800px; height: 150px; padding: 10px;">
+					마들렌에 대한 이야기는 안하셨으면 좋겠어요</div>
+			</div>
+		</div>
+	</div>
+	<!-- 우리 동네 다른 중고 책 구경하기 -->
+
+	<!-- 하단 바 -->
+	<div class="footer">
+		<div class="quotes">
+			<p>It is because people have contact with the book and I learned
+				it, but it ﻿life.</p>
+			<p>- Anatole France</p>
+		</div>
+	</div>
+
+	<!-- go to Main JS-->
+	<script type="text/javascript" src="../js/goToMain.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.bookSell {
+	height: 100%;
+	padding-left: 200px;
+	padding-right: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.bookInfo1 {
+	display : flex;
+}
+
+.bookInfo1 p {
+	margin : 10px;
+}
+
+.bookInfo2 {
+	display : flex;
+}
+
+.bookInfo2_1 {
+	padding : 20px;
+}
+
+.bookImage img{
+	padding : 20px;
+	width : 200px;
+	height : 300px;
+}
+
+.bookContent {
+	display : flex;
+	margin : 10px;
+}
+
+.seller {
+	/* height: 500px; */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 200px;
+	padding-right: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.booksDetailSmaillTitle {
+	margin-bottom: 10px;
+}
+
+.sellerListScroll {
+	margin: 20px;
+}
+
+/* 스크롤바에 스타일 주기 */
+.sellerListScroll::-webkit-scrollbar {
+    width: 10px;
+ }
+
+.sellerListScroll::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.sellerListScroll::-webkit-scrollbar-track {
+    background-color: grey;  
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.sellingBook1 {
+	display : flex;
+}
+
+.sellerListScroll img{
+	padding : 20px;
+	width : 100px;
+	height : 150px;
+}
+
+.sellingContent{
+	margin : 10px;
+}
+
+.sellingBook1_1 {
+	padding : 20px;
+}
+
+.sellerListScrollLine {
+	
+}

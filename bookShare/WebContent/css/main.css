@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.smallTitle {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font: italic 1.2em "Fira Sans", serif;
+}
+
+.footer {
+	/* position: fixed; */
+	background-color: #341d08;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* height: 6rem; */
+}
+
+.quotes{
+	color: #ededed;
+	margin-top : 20px;
+	padding-top : 20px;
+	padding-right : 20px;
+	text-align: right;
+	font-size: 12pt;
+	font-family: 'PT Sans', Arial, Sans-serif;
+}
+
+.author{
+	color: #ededed;
+	padding-right : 20px;
+	padding-bottom : 20px;
+	text-align: right;
+	font-size: 12pt;
+	font-family: 'PT Sans', Arial, Sans-serif;
+}
