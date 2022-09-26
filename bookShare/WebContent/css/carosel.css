@@ -1,22 +1,45 @@
-.slideSection{
+.slideSection {
 	
 }
 
- .main-carousel{
-	margin-bottom : 30px;
+.main-carousel {
+	margin-bottom: 30px;
 }
 
-.cell{
+.cell {
 	/*width: 33%;*/
-	height: 350px;
+	height: 430px;
 	margin: 15px;
 	overflow: hidden;
 	border-radius: 8px;
+	position: relative;
 }
 
-.cell img{
+.cell img {
 	cursor: pointer;
 	width: 250px;
 	height: 350px;
 	object-ift: cover;
+	border-radius: 8px;
+}
+
+.todayBookInfo {
+	display: flex;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+}
+
+.vl {
+	border-left: 1px solid gray;
+	height: 22px;
+	margin-top : 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.cell p {
+	margin-top: 10px;
+	text-align: center;
 }
