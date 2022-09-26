@@ -1,10 +1,13 @@
-.main-carousel{
-	margin-left : 50px;
-	margin-right : 50px;
+.slideSection{
+	
+}
+
+ .main-carousel{
+	margin-bottom : 30px;
 }
 
 .cell{
-	width: 33%;
+	/*width: 33%;*/
 	height: 350px;
 	margin: 15px;
 	overflow: hidden;
@@ -13,7 +16,7 @@
 
 .cell img{
 	cursor: pointer;
-	width: 100%;
+	width: 250px;
 	height: 350px;
 	object-ift: cover;
 }

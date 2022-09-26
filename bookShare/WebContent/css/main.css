@@ -5,10 +5,20 @@
 	padding: 0;
 }
 
-.smallTitle {
+.mainBody {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.sliderSection {
 	margin-left: 50px;
 	margin-right: 50px;
-	margin-top: 10px;
+}
+
+.smallTitle {
+	/* margin-left: 50px;
+	margin-right: 50px; 
+	margin-top: 10px; */
 	margin-bottom: 10px;
 	font: italic 1.2em "Fira Sans", serif;
 }

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/menu.css">
-<link rel="stylesheet" href="css/tab.css">
+<link rel="stylesheet" href="css/mainPage/tab.css">
 <link rel="stylesheet" type="text/css" href="css/carosel.css">
 <link rel="stylesheet"
 	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -17,7 +17,7 @@
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 
-<!-- 메뉴바 --> <!-- main으로 바꾼 후 다시 push test-->
+<!-- 메뉴바 -->
 <header>
 	<div class="menu">
 		<nav class="clearfix">
@@ -37,34 +37,45 @@
 		<img src="images/aviemua.png" />
 	</div>
 
-	<div class="smallTitle">
-		<p>오늘 들어온 책</p>
-	</div>
+	<div class="mainBody">
+		<div class="sliderSection">
+			<div class="smallTitle">
+				<p>오늘 들어온 책</p>
+			</div>
 
-	<!-- Carousel -->
-	<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
-	<!-- Indicators -->
-	<!-- <ol class="carousel-indicators">
+			<!-- Carousel -->
+			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+			<!-- Indicators -->
+			<!-- <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol> -->
 
-	<!-- 슬라이드 창 -->
-	<div class="main-carousel">
-		<div class="cell" onclick="moveBooksDetail()">
-			<img src="images/1.jpg">
-		</div>
-		<div class="cell" onclick="moveBooksDetail()">
-			<img src="images/2.jpg">
-		</div>
-		<div class="cell" onclick="moveBooksDetail()">
-			<img src="images/3.jpg">
-		</div>
-	</div>
+			<!-- 슬라이드 창 -->
+			<div class="main-carousel">
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/1.jpg">
+				</div>
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/2.jpg">
+				</div>
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/3.jpg">
+				</div>
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/4.jpg">
+				</div>
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/5.jpg">
+				</div>
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/6.jpg">
+				</div>
+			</div>
 
-	<!-- 캐로셀 왼/오 버튼 -->
-	<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<!-- 캐로셀 왼/오 버튼 -->
+			<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span> <span
 			class="sr-only">Previous</span>
 		</a> <a class="right carousel-control" href="#myCarousel"
@@ -72,40 +83,47 @@
 			class="glyphicon glyphicon-chevron-right"></span> <span
 			class="sr-only">Next</span>
 		</a> -->
-	<!-- </div> -->
+			<!-- </div> -->
 
-	<br />
+			<br />
 
-	<div class="smallTitle">
-		<p>우리 동네 중고 책방</p>
+			<div class="smallTitle">
+				<p>우리 동네 중고 책방</p>
+			</div>
+		</div>
+		<!-- slider Section End -->
+
+		<!-- 탭메뉴 만들기 -->
+		<div class="container">
+			<ul class="tabs">
+				<li class="tab-link current" data-tab="tab-1">판매</li>
+				<li class="tab-link" data-tab="tab-2">나눔</li>
+			</ul>
+			<div id="tab-1" class="tab-content current">
+				<div class = "ourUsedBook">
+					<img src="images/6.jpg">
+				</div>
+				<div class = "ourUsedBook">
+					<img src="images/6.jpg">
+				</div>
+				<div class = "ourUsedBook">
+					<img src="images/6.jpg">
+				</div>
+			</div>
+			<div id="tab-2" class="tab-content">Duis aute irure dolor in
+				reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+				culpa qui officia deserunt mollit anim id est laborum.</div>
+		</div>
+
+		<br />
 	</div>
-
-	<!-- 탭메뉴 만들기 -->
-	<div class="container">
-		<ul class="tabs">
-			<li class="tab-link current" data-tab="tab-1">판매</li>
-			<li class="tab-link" data-tab="tab-2">나눔</li>
-		</ul>
-
-		<div id="tab-1" class="tab-content current">Lorem ipsum dolor
-			sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat.</div>
-		<div id="tab-2" class="tab-content">Duis aute irure dolor in
-			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-			culpa qui officia deserunt mollit anim id est laborum.</div>
-	</div>
-
-	<br />
-
 	<!-- 하단 바 -->
 	<div class="footer">
 		<h1 id="quotes" class="quotes">인용문구가 들어갈 자리</h1>
 		<p id="author" class="author">작가가 들어갈 자리</p>
 	</div>
-	
+
 	<!-- tab JS-->
 	<script type="text/javascript" src="js/tab.js"></script>
 	<!-- carousel JS-->
@@ -124,27 +142,24 @@
 		var quote = document.getElementById('quotes');
 		var author = document.getElementById('author');
 		var arr = [
-			{
-				quote: "박제가 되어버린 천재를 아시오?",
-				author: "이상"
-			},
-			{
-				quote: "여성이 작가가 되기 위해서는 돈과 자기만의 방이 필요하다.",
-				author: "버지니아 울프"
-			},
-			{
-				quote: "One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.",
-				author: "Carl Sagan"
-			},
-			{
-				quote: "Books are a uniquely portable magic.",
-				author: "Stephen King"
-			},
-			{
-				quote: "Think before you speak. Read before you think.",
-				author: "Fran Lebowitz"
-			},
-		];
+				{
+					quote : "박제가 되어버린 천재를 아시오?",
+					author : "이상"
+				},
+				{
+					quote : "여성이 작가가 되기 위해서는 돈과 자기만의 방이 필요하다.",
+					author : "버지니아 울프"
+				},
+				{
+					quote : "One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.",
+					author : "Carl Sagan"
+				}, {
+					quote : "Books are a uniquely portable magic.",
+					author : "Stephen King"
+				}, {
+					quote : "Think before you speak. Read before you think.",
+					author : "Fran Lebowitz"
+				}, ];
 		var random = Math.floor(Math.random() * arr.length);
 		quotes.textContent = arr[random].quote;
 		author.textContent = arr[random].author;
