@@ -1,5 +1,8 @@
 # 👨‍💻 SW캠프 HTML 개인프로젝트   
 ## Development   
+* HTML
+* JavaScript
+* JQuery   
 ### Page routing path   
 ### Commit Message Convention   
 
