@@ -3,7 +3,7 @@
 * HTML
 * JavaScript
 * JQuery   
-* TomCat v8.5
+* Apache Tomcat v8.5
 ### Page routing path   
 ### Commit Message Convention   
 
