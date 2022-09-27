@@ -48,7 +48,8 @@
 }
 
 .sellerListScroll {
-	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* 스크롤바에 스타일 주기 */

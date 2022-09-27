@@ -23,6 +23,13 @@
 	border-radius: 8px;
 }
 
+/*마우스 오버시 색상 변경*/
+.cell img:hover{
+	opacity:0.6; 
+	text-align:center; 
+	color:#ffffff;
+}
+
 .todayBookInfo {
 	display: flex;
 	position: absolute;

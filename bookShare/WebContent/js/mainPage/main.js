@@ -64,6 +64,42 @@ $(function() {
 	$('#ourUsedBook_10').mouseout(function() {
 		$(this).css('background', '#ededed');
 	})
+	$('#ourUsedBook_11').mouseover(function() {
+		$(this).css('background', '#D8D8D8');
+	})
+	$('#ourUsedBook_11').mouseout(function() {
+		$(this).css('background', '#ededed');
+	})
+	$('#ourUsedBook_12').mouseover(function() {
+		$(this).css('background', '#D8D8D8');
+	})
+	$('#ourUsedBook_12').mouseout(function() {
+		$(this).css('background', '#ededed');
+	})
+	$('#ourUsedBook_13').mouseover(function() {
+		$(this).css('background', '#D8D8D8');
+	})
+	$('#ourUsedBook_13').mouseout(function() {
+		$(this).css('background', '#ededed');
+	})
+	$('#ourUsedBook_14').mouseover(function() {
+		$(this).css('background', '#D8D8D8');
+	})
+	$('#ourUsedBook_14').mouseout(function() {
+		$(this).css('background', '#ededed');
+	})
+	$('#ourUsedBook_15').mouseover(function() {
+		$(this).css('background', '#D8D8D8');
+	})
+	$('#ourUsedBook_15').mouseout(function() {
+		$(this).css('background', '#ededed');
+	})
+	$('#ourUsedBook_16').mouseover(function() {
+		$(this).css('background', '#D8D8D8');
+	})
+	$('#ourUsedBook_16').mouseout(function() {
+		$(this).css('background', '#ededed');
+	})
 });
 
 //캐로셀 cell hover 주기
