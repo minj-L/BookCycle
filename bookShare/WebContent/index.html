@@ -23,7 +23,7 @@
 	<div class="menu">
 		<nav class="clearfix">
 			<ul class="clearfix">
-				<p style="text-align: center;">뀨</p>
+				<li style="margin-right: 25%;"><p style="color:#ffffff; font: 1.5em/1em Georgia, serif ;">그대는 이 불멸의 시 속에서 영원할 테니까</p></li>
 				<li><a href="http://www._____.com/Travel">LOGIN</a></li>
 				<li><a href="http://www._____.com/Contact">SIGNIN</a></li>
 			</ul>
@@ -56,7 +56,7 @@
 
 			<!-- 슬라이드 창 -->
 			<div class="main-carousel">
-				<div class="cell" onclick="moveBooksDetail()">
+				<div id="cell_1" class="cell" onclick="moveBooksDetail()">
 					<img src="images/1.jpg">
 					<p>키코게임즈 : 호모 사피엔스</p>
 					<div class="todayBookInfo">
@@ -109,31 +109,31 @@
 			</ul>
 			<div id="tab-1" class="tab-content current">
 				<div class="ourUsedBook">
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_1" class="ourUsedBook_1">
 						<img src="images/6.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_2" class="ourUsedBook_1">
 						<img src="images/5.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_3" class="ourUsedBook_1">
 						<img src="images/1.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_4" class="ourUsedBook_1">
 						<img src="images/2.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_5" class="ourUsedBook_1">
 						<img src="images/2.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
@@ -141,31 +141,31 @@
 					</div>
 				</div>
 				<div class="ourUsedBook">
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_6" class="ourUsedBook_1">
 						<img src="images/6.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_7" class="ourUsedBook_1">
 						<img src="images/5.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_8" class="ourUsedBook_1">
 						<img src="images/1.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_9" class="ourUsedBook_1">
 						<img src="images/2.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
 						<p>서초구</p>
 					</div>
-					<div class="ourUsedBook_1">
+					<div id="ourUsedBook_10" class="ourUsedBook_1">
 						<img src="images/1.jpg">
 						<p>이리의 형제</p>
 						<p>10,000원</p>
@@ -225,6 +225,8 @@
 		<p id="author" class="author">작가가 들어갈 자리</p>
 	</div>
 
+	<!-- mainJS -->
+	<script type="text/javascript" src="js/mainPage/main.js"></script>
 	<!-- tab JS-->
 	<script type="text/javascript" src="js/tab.js"></script>
 	<!-- carousel JS-->

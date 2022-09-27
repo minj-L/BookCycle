@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+
+//테이블에 마우스 올라가면 엘리먼트 강조
+$(function(){
+	$('#ourUsedBook_1').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_1').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_2').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_2').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_3').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_3').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_4').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_4').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_5').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_5').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_6').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_6').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_7').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_7').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_8').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_8').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_9').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_9').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+	$('#ourUsedBook_10').mouseover(function(){
+		$(this).css('background','#D8D8D8');
+	})
+	$('#ourUsedBook_10').mouseout(function(){
+		$(this).css('background','#ededed');
+	})
+})

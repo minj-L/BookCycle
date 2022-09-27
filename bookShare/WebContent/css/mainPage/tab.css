@@ -41,6 +41,7 @@ ul.tabs li.current {
 }
 
 #tab-1 {
+	
 }
 
 #tab-1 img {
@@ -61,6 +62,11 @@ ul.tabs li.current {
 
 .ourUsedBook {
 	display: flex;
+}
+
+.ourUsedBook_1 {
+	cursor: pointer;
+	border-radius: 10px;
 }
 
 .ourUsedBook_1 p {
