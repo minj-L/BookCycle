@@ -1,11 +1,24 @@
 table {
-    /*margin-left:100px; 
+	/*margin-left:100px; 
     margin-right:auto;*/
-    width : 90%;
+	width: 90%;
 }
 
 table, tr, th {
-    border-collapse : collapse;
-    border:none;
-    /*border : 1px solid black;*/
-};
+	border-collapse: collapse;
+	border: none;
+	/*border : 1px solid black;*/
+}
+
+#btn1 button{
+	border: 1px solid #633309;
+	background-color: rgba(0, 0, 0, 0);
+	color: #633309;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#btn1 button:hover{
+	color:white;
+    background-color: #633309;
+}

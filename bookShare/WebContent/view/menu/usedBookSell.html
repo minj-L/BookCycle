@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="../../css/main.css">
 <link rel="stylesheet" href="../../css/common/commonMenu.css">
 <link rel="stylesheet" href="../../css/menu/usedBookSell.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <!-- 메뉴바 -->
 <header>
@@ -31,92 +32,88 @@
 	</div>
 
 	<!-- 갤러리 같은 테이블 있는 곳 -->
-	<div class="sellTable" style="margin-left : 150px;">
-		<h2>우리동네 중고 책방</h2>
-
+	<div class="sellTable" style="margin-left: 150px;">
+		<h2 style="margin-left: 100px; color: #633309;">우리동네 중고 책방</h2>
+		<div id="btn1" style="margin-left: 77%;">
+			<button id="btn">판매 글 등록하기</button>
+		</div>
 		<form class="inForm" name="inForm" method="post">
-			<table class="sellTable" style="margin-top : 20px; margin-bottom : 50px;">
+			<table class="sellTable"
+				style="margin-top: 20px; margin-bottom: 50px;">
 				<tr>
-					<td id="sellBook1" width="150" align="center" style="padding : 20px;">
-						<img src="../../images/4.jpg" style="width: 250px; height: 350px;"/>
+					<td id="sellBook1" width="150" align="center"
+						style="padding: 20px;"><img src="../../images/4.jpg"
+						style="width: 250px; height: 350px;" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
-					<td width="150" align="center">
-						<img src="../../images/6.jpg" style="width: 250px; height: 350px;"/>
+						</div></td>
+					<td width="150" align="center"><img src="../../images/6.jpg"
+						style="width: 250px; height: 350px;" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
-					<td width="150" align="center">
-					<img src="../../images/3.jpg" style="width: 250px; height: 350px;"/>
+						</div></td>
+					<td width="150" align="center"><img src="../../images/3.jpg"
+						style="width: 250px; height: 350px;" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
+						</div></td>
 				</tr>
 				<tr>
-					<td align="center" style="padding : 20px;">
-						<img src="../../images/2.jpg" style="width: 250px; height: 350px"/> 
+					<td align="center" style="padding: 20px;"><img
+						src="../../images/2.jpg" style="width: 250px; height: 350px" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
-					<td align="center">
-						<img src="../../images/3.jpg" style="width: 250px; height: 350px"/> 
+						</div></td>
+					<td align="center"><img src="../../images/3.jpg"
+						style="width: 250px; height: 350px" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
-					<td align="center">
-						<img src="../../images/1.jpg" style="width: 250px; height: 350px"/>
+						</div></td>
+					<td align="center"><img src="../../images/1.jpg"
+						style="width: 250px; height: 350px" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
+						</div></td>
 				</tr>
 				<tr>
-					<td align="center" style="padding : 20px;">
-						<img src="../../images/1.jpg" style="width: 250px; height: 350px"/> 
+					<td align="center" style="padding: 20px;"><img
+						src="../../images/1.jpg" style="width: 250px; height: 350px" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
-					<td align="center">
-						<img src="../../images/6.jpg" style="width: 250px; height: 350px"/> 
+						</div></td>
+					<td align="center"><img src="../../images/6.jpg"
+						style="width: 250px; height: 350px" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
-					<td align="center">
-						<img src="../../images/5.jpg" style="width: 250px; height: 350px"/>
+						</div></td>
+					<td align="center"><img src="../../images/5.jpg"
+						style="width: 250px; height: 350px" />
 						<div class="usedInfo">
 							<p>여름의 사실</p>
 							<p>산척동</p>
 							<p>12,000원</p>
-						</div>
-					</td>
+						</div></td>
 				</tr>
 			</table>
 		</form>
 	</div>
+
 	<!-- 하단 바 -->
 	<div class="footer">
 		<h1 id="quotes" class="quotes">인용문구가 들어갈 자리</h1>
@@ -129,6 +126,7 @@
 			location.href = "../../index.html";
 		}
 	</script>
+
 	<!-- quotes JS-->
 	<script type="text/javascript">
 		var quote = document.getElementById('quotes');
@@ -156,8 +154,9 @@
 		quotes.textContent = arr[random].quote;
 		author.textContent = arr[random].author;
 	</script>
-	
+
 	<!-- /menu/usedBook.js -->
 	<script type="text/javascript" src="../../js/menu/usedBookSell.js"></script>
+
 </body>
 </html>
