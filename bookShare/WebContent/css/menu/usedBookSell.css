@@ -1,0 +1,11 @@
+table {
+    /*margin-left:100px; 
+    margin-right:auto;*/
+    width : 90%;
+}
+
+table, tr, th {
+    border-collapse : collapse;
+    border:none;
+    /*border : 1px solid black;*/
+};

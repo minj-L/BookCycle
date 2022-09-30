@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Used Book Sell</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../css/main.css">
+<link rel="stylesheet" href="../../css/common/commonMenu.css">
+<link rel="stylesheet" href="../../css/menu/usedBookSell.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<!-- 메뉴바 -->
+<header>
+	<div class="menu">
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="usedBookSell.html">책 판매</a></li>
+				<li><a href="shareBook.html">책 나눔</a></li>
+				<li><a href="http://www._____.com/Travel">책 기부하기</a></li>
+				<li><a href="http://www._____.com/Contact">책 처분하기</a></li>
+			</ul>
+			<a id="pull" href="#"></a>
+		</nav>
+	</div>
+</header>
+<body>
+	<!-- 로고 -->
+	<div class="logo" style="text-align: center; cursor: pointer;"
+		onclick="usedBookSellToGoToMain()">
+		<img src="../../images/aviemua.png" />
+	</div>
+
+	<!-- 갤러리 같은 테이블 있는 곳 -->
+	<div class="sellTable" style="margin-left : 150px;">
+		<h2>우리동네 중고 책방</h2>
+
+		<form class="inForm" name="inForm" method="post">
+			<table class="sellTable" style="margin-top : 20px; margin-bottom : 50px;">
+				<tr>
+					<td id="sellBook1" width="150" align="center" style="padding : 20px;">
+						<img src="../../images/4.jpg" style="width: 250px; height: 350px;"/>
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+					<td width="150" align="center">
+						<img src="../../images/6.jpg" style="width: 250px; height: 350px;"/>
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+					<td width="150" align="center">
+					<img src="../../images/3.jpg" style="width: 250px; height: 350px;"/>
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding : 20px;">
+						<img src="../../images/2.jpg" style="width: 250px; height: 350px"/> 
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+					<td align="center">
+						<img src="../../images/3.jpg" style="width: 250px; height: 350px"/> 
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+					<td align="center">
+						<img src="../../images/1.jpg" style="width: 250px; height: 350px"/>
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding : 20px;">
+						<img src="../../images/1.jpg" style="width: 250px; height: 350px"/> 
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+					<td align="center">
+						<img src="../../images/6.jpg" style="width: 250px; height: 350px"/> 
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+					<td align="center">
+						<img src="../../images/5.jpg" style="width: 250px; height: 350px"/>
+						<div class="usedInfo">
+							<p>여름의 사실</p>
+							<p>산척동</p>
+							<p>12,000원</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<!-- 하단 바 -->
+	<div class="footer">
+		<h1 id="quotes" class="quotes">인용문구가 들어갈 자리</h1>
+		<p id="author" class="author">작가가 들어갈 자리</p>
+	</div>
+
+	<!-- go to Main JS-->
+	<script type="text/javascript">
+		function usedBookSellToGoToMain() {
+			location.href = "../../index.html";
+		}
+	</script>
+	<!-- quotes JS-->
+	<script type="text/javascript">
+		var quote = document.getElementById('quotes');
+		var author = document.getElementById('author');
+		var arr = [
+				{
+					quote : "박제가 되어버린 천재를 아시오?",
+					author : "이상"
+				},
+				{
+					quote : "여성이 작가가 되기 위해서는 돈과 자기만의 방이 필요하다.",
+					author : "버지니아 울프"
+				},
+				{
+					quote : "One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.",
+					author : "Carl Sagan"
+				}, {
+					quote : "Books are a uniquely portable magic.",
+					author : "Stephen King"
+				}, {
+					quote : "Think before you speak. Read before you think.",
+					author : "Fran Lebowitz"
+				}, ];
+		var random = Math.floor(Math.random() * arr.length);
+		quotes.textContent = arr[random].quote;
+		author.textContent = arr[random].author;
+	</script>
+	
+	<!-- /menu/usedBook.js -->
+	<script type="text/javascript" src="../../js/menu/usedBookSell.js"></script>
+</body>
+</html>
