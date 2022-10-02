@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>books Detail</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/mainPage/main.css">
 <link rel="stylesheet" href="../css/common/commonMenu.css">
 <link rel="stylesheet" href="../css/booksDetail/bookSellSection.css">
 </head>
@@ -15,8 +15,8 @@
 			<ul class="clearfix">
 				<li><a href="menu/usedBookSell.html">책 판매</a></li>
 				<li><a href="menu/shareBook.html">책 나눔</a></li>
-				<li><a href="http://www._____.com/Travel">책 기부하기</a></li>
-				<li><a href="http://www._____.com/Contact">책 처분하기</a></li>
+				<li><a href="menu/donateBook.html">책 기부하기</a></li>
+				<li><a href="menu/getOutBook.html">책 처분하기</a></li>
 			</ul>
 			<a id="pull" href="#"></a>
 		</nav>
@@ -32,16 +32,16 @@
 	<!-- 책 정보 섹션 -->
 	<div class="bookSell">
 		<div class="bookInfo1">
-			<div class="bookTitle">
-				<p>기다릴 때 우리가 하는 말들</p>
+			<div class="bookTitle1">
+				<p>설국</p>
 			</div>
-			<div class="bookTitle">
-				<p>김병운</p>
+			<div class="bookTitle2">
+				<p>가와바타 야스나리</p>
 			</div>
-			<div class="bookTitle">
+			<div class="bookTitle2">
 				<p>민음사</p>
 			</div>
-			<div class="bookTitle">
+			<div class="bookTitle2">
 				<p>2017-11-08</p>
 			</div>
 		</div>
@@ -50,14 +50,14 @@
 		<!-- 책 사진 가격 정보 섹션 -->
 		<div class="bookInfo2">
 			<div class="bookImage">
-				<img src="../images/2.jpg" />
+				<img src="../images/7.jpg" />
 			</div>
 			<div class="bookInfo2_1">
 				<div class="bookContent">
 					<p>책 속의 한 줄</p>
 				</div>
 				<div class="bookContent">
-					<h3>밤의 끝은 눈의 세상이었다.</h3>
+					<h3>국경의 긴 터널을 넘어서자, 그곳은 설국이었다</h3>
 				</div>
 				<div class="bookContent">
 					<p>정가</p>
@@ -72,10 +72,19 @@
 				<div class="bookContent">
 					<p>평균 상태</p>
 					&nbsp;
-					<p>최상</p>
+					<p>상</p>
 				</div>
 				<div class="bookContent">
 					<p>새 책사기</p>
+				</div>
+				<div class="buyNewBook">
+					<a href="http://www.yes24.com/Product/Goods/252513"> <img
+						src="../images/yes24.png" />
+					</a> <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788937460616&orderClick=LAV&Kc="> <img
+						src="../images/kyobo.png" />
+					</a> <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=328730"> <img
+						src="../images/aladin.png" />
+					</a>
 				</div>
 			</div>
 		</div>
@@ -85,7 +94,7 @@
 	<!-- 판매자 정보 -->
 	<div class="seller">
 		<div class="booksDetailSmaillTitle">
-			<p>판매자 목록</p>
+			<h3>판매자 목록</h3>
 		</div>
 		<hr class="one" />
 
@@ -95,39 +104,39 @@
 			<div class="sellingBook1" style="cursor: pointer;"
 				onclick="goToSellerDetail()">
 				<div class="sellingBookImage">
-					<img src="../images/2.jpg" />
+					<img src="../images/7.jpg" />
 				</div>
 				<div class="sellingBook1_1">
-					<div class="sellingContent">책제목</div>
-					<div class="sellingContent">산척동</div>
-					<div class="sellingContent">상태</div>
-					<div class="sellingContent">가격</div>
+					<div class="sellingContent"><h3>설국</h3></div>
+					<div class="sellingContent">봉천동</div>
+					<div class="sellingContent">상태 : 상</div>
+					<div class="sellingContent">가격 : 10,000</div>
 				</div>
 			</div>
 			<hr class="sellerListScrollLine" />
 			<div class="sellingBook1" style="cursor: pointer;"
 				onclick="goToSellerDetail()">
 				<div class="sellingBookImage">
-					<img src="../images/3.jpg" />
+					<img src="../images/7.jpg" />
 				</div>
 				<div class="sellingBook1_1">
-					<div class="sellingContent">책제목</div>
+					<div class="sellingContent"><h3>설국</h3></div>
 					<div class="sellingContent">산척동</div>
-					<div class="sellingContent">상태</div>
-					<div class="sellingContent">가격</div>
+					<div class="sellingContent">상태 : 중</div>
+					<div class="sellingContent">가격 : 6,000</div>
 				</div>
 			</div>
 			<hr class="sellerListScrollLine" />
 			<div class="sellingBook1" style="cursor: pointer;"
 				onclick="goToSellerDetail()">
 				<div class="sellingBookImage">
-					<img src="../images/3.jpg" />
+					<img src="../images/7.jpg" />
 				</div>
 				<div class="sellingBook1_1">
-					<div class="sellingContent">책제목</div>
-					<div class="sellingContent">산척동</div>
-					<div class="sellingContent">상태</div>
-					<div class="sellingContent">가격</div>
+					<div class="sellingContent"><h3>설국</h3></div>
+					<div class="sellingContent">장지동</div>
+					<div class="sellingContent">상태 : 하</div>
+					<div class="sellingContent">가격 : 3,000</div>
 				</div>
 			</div>
 			<hr class="sellerListScrollLine" />
@@ -143,9 +152,9 @@
 	</div>
 
 	<!-- go to Main JS-->
-	<script type="text/javascript" src="../js/goToMain.js"></script>
+	<script type="text/javascript" src="../js/common/goToMain.js"></script>
 	<!-- go seller Detail JS-->
-	<script type="text/javascript" src="../js/goToSellerDetail.js"></script>
+	<script type="text/javascript" src="../js/common/goToSellerDetail.js"></script>
 	<!-- quotes JS-->
 	<script type="text/javascript">
 		var quote = document.getElementById('quotes');

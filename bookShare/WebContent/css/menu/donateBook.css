@@ -1,0 +1,41 @@
+hr{
+	margin-bottom : 20px;
+	width : 10%;
+	margin-left : 45%;
+}
+
+.donateTitle{
+	text-align: center;
+}
+
+.donateTitle h1{
+	margin-bottom : 20px;
+}
+
+.map-frame{
+	text-align: center;
+}
+
+.map-frame h1{
+	margin-Top : 20px;
+	margin-bottom : 20px;	
+}
+
+#daumRoughmapContainer1664710117890 {
+	margin-left : 29%;
+}
+
+#daumRoughmapContainer1664712668722{
+	margin-left : 29%;
+}
+
+#daumRoughmapContainer1664712894706{
+	margin-left : 29%;
+}
+
+.map-detail{
+	margin-Top : 20px;
+	margin-bottom : 20px;	
+	margin-left : 29%;
+	font-size : 15px;
+}

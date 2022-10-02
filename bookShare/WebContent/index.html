@@ -4,10 +4,10 @@
 <title>Born To Read</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/mainPage/main.css">
+<link rel="stylesheet" href="css/menu/menu.css">
 <link rel="stylesheet" href="css/mainPage/tab.css">
-<link rel="stylesheet" type="text/css" href="css/carosel.css">
+<link rel="stylesheet" type="text/css" href="css/mainPage/carosel.css">
 <link rel="stylesheet"
 	href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script
@@ -22,10 +22,10 @@
 	<div class="menu">
 		<nav class="clearfix">
 			<ul class="clearfix">
-				<li style="margin-right: 35%;"><p
-						style="color: #ffffff; font: 1.5em/1em Georgia, serif;">BookCycle</p></li>
-				<li><a href="http://www._____.com/Travel">LOGIN</a></li>
-				<li><a href="http://www._____.com/Contact">SIGNIN</a></li>
+				<li><a href="view/menu/usedBookSell.html">책 판매</a></li>
+				<li><a href="view/menu/shareBook.html">책 나눔</a></li>
+				<li><a href="view/menu/donateBook.html">책 기부하기</a></li>
+				<li><a href="view/menu/getOutBook.html">책 처분하기</a></li>
 			</ul>
 			<a id="pull" href="#"></a>
 		</nav>
@@ -66,10 +66,10 @@
 					</div>
 				</div>
 				<div class="cell" onclick="moveBooksDetail()">
-					<img src="images/2.jpg">
-					<p>기다릴 때 우리가</p>
+					<img src="images/7.jpg">
+					<p>설국</p>
 					<div class="todayBookInfo">
-						<p>김병운</p>
+						<p>가와타베</p>
 						<div class="vl"></div>
 						<p>민음사</p>
 					</div>
@@ -108,6 +108,15 @@
 						<p>허교범</p>
 						<div class="vl"></div>
 						<p>창비</p>
+					</div>
+				</div>
+				<div class="cell" onclick="moveBooksDetail()">
+					<img src="images/2.jpg">
+					<p>기다릴 때 우리가</p>
+					<div class="todayBookInfo">
+						<p>김병운</p>
+						<div class="vl"></div>
+						<p>민음사</p>
 					</div>
 				</div>
 			</div>
@@ -150,101 +159,122 @@
 					<div id="ourUsedBook_2" class="ourUsedBook_1"
 						onclick="mainToSellerDetail()">
 						<img src="images/5.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>프리랜서의 자부심</p>
+						<p>5,000원</p>
+						<p>양천구</p>
 					</div>
-					<div id="ourUsedBook_3" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_3" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/1.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>키코케임즈</p>
+						<p>9,580원</p>
+						<p>금천구</p>
 					</div>
-					<div id="ourUsedBook_4" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_4" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/2.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>기다릴 때 우리가</p>
+						<p>12,000원</p>
+						<p>양서구</p>
 					</div>
-					<div id="ourUsedBook_5" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_5" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/2.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>기다릴 때 우리가</p>
+						<p>4,000원</p>
+						<p>봉천동</p>
 					</div>
 				</div>
 				<div class="ourUsedBook">
-					<div id="ourUsedBook_6" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_6" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/6.jpg">
 						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>8,700원</p>
+						<p>은평구</p>
 					</div>
-					<div id="ourUsedBook_7" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_7" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/5.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
+						<p>프리랜서의 자부심</p>
+						<p>5,750원</p>
 						<p>서초구</p>
 					</div>
-					<div id="ourUsedBook_8" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_8" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/1.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
+						<p>키코게임즈</p>
+						<p>9,850원</p>
 						<p>서초구</p>
 					</div>
-					<div id="ourUsedBook_9" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_9" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/2.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>기다릴 때 우리가</p>
+						<p>13,000원</p>
+						<p>노원구</p>
 					</div>
-					<div id="ourUsedBook_10" class="ourUsedBook_1" onclick="mainToSellerDetail()">
+					<div id="ourUsedBook_10" class="ourUsedBook_1"
+						onclick="mainToSellerDetail()">
 						<img src="images/1.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>키코게임즈</p>
+						<p>2,000원</p>
+						<p>중랑구</p>
 					</div>
 				</div>
 			</div>
 			<div id="tab-2" class="tab-content">
 				<div class="ourUsedBook">
-					<div id="ourUsedBook_11" class="ourUsedBook_1">
+					<div id="ourUsedBook_11" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/5.jpg">
-						<p>이리의 형제</p>
+						<p>프리랜서의 자부심</p>
 						<p>서초구</p>
+						<p>무료로 나눔합니다!</p>
 					</div>
-					<div id="ourUsedBook_12" class="ourUsedBook_1">
+					<div id="ourUsedBook_12" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/1.jpg">
-						<p>이리의 형제</p>
-						<p>서초구</p>
+						<p>키코게임즈</p>
+						<p>은평구</p>
+						<p>상태 상~중 무료 입니다.</p>
 					</div>
-					<div id="ourUsedBook_13" class="ourUsedBook_1">
+					<div id="ourUsedBook_13" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/1.jpg">
-						<p>이리의 형제</p>
-						<p>서초구</p>
+						<p>키코 게임즈</p>
+						<p>봉천동</p>
+						<p>한 번 읽은 책 입니다.</p>
 					</div>
-					<div id="ourUsedBook_14" class="ourUsedBook_1">
+					<div id="ourUsedBook_14" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/2.jpg">
-						<p>이리의 형제</p>
+						<p>기다릴 때 우리가</p>
 						<p>서초구</p>
+						<p>이사로 인해 나눔합니다.</p>
 					</div>
-					<div id="ourUsedBook_15" class="ourUsedBook_1">
+					<div id="ourUsedBook_15" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/2.jpg">
-						<p>이리의 형제</p>
-						<p>10,000원</p>
-						<p>서초구</p>
+						<p>기다릴 때 우리가</p>
+						<p>노원구</p>
+						<p>나눔합니다.</p>
 					</div>
 				</div>
 				<div class="ourUsedBook">
-					<div id="ourUsedBook_16" class="ourUsedBook_1">
+					<div id="ourUsedBook_16" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/3.jpg">
-						<p>이리의 형제</p>
-						<p>서초구</p>
+						<p>산문기행</p>
+						<p>양재동</p>
+						<p>좋은책 나눔</p>
 					</div>
-					<div id="ourUsedBook_17" class="ourUsedBook_1">
+					<div id="ourUsedBook_17" class="ourUsedBook_1"
+						onclick="goToShareDetail()">
 						<img src="images/3.jpg">
-						<p>이리의 형제</p>
-						<p>서초구</p>
+						<p>산문기행</p>
+						<p>중랑구</p>
+						<p>상태 하 인 책 나눔해요</p>
 					</div>
 				</div>
 			</div>
@@ -258,10 +288,10 @@
 		<p id="author" class="author">작가가 들어갈 자리</p>
 	</div>
 
-	<!-- mainJS -->
-	<script type="text/javascript" src="js/mainPage/main.js"></script>
+	<!-- tabMouseOver.js -->
+	<script type="text/javascript" src="js/mainPage/tabMouseOver.js"></script>
 	<!-- tab JS-->
-	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="js/mainPage/tab.js"></script>
 	<!-- carousel JS-->
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script type="text/javascript">
@@ -272,7 +302,7 @@
 		});
 	</script>
 	<!-- move to booksDetail JS-->
-	<script type="text/javascript" src="js/booksDetail.js"></script>
+	<script type="text/javascript" src="js/common/booksDetail.js"></script>
 	<!-- quotes JS-->
 	<script type="text/javascript">
 		var quote = document.getElementById('quotes');
@@ -301,6 +331,8 @@
 		author.textContent = arr[random].author;
 	</script>
 	<!-- go seller Detail JS-->
-	<script type="text/javascript" src="./js/goToSellerDetail.js"></script>
+	<script type="text/javascript" src="./js/common/goToSellerDetail.js"></script>
+	<!-- move to shareDetail JS-->
+	<script type="text/javascript" src="./js/common/goToShareDetail.js"></script>
 </body>
 </html>

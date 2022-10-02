@@ -101,17 +101,3 @@ $(function() {
 		$(this).css('background', '#ededed');
 	})
 });
-
-//캐로셀 cell hover 주기
-$(".cell_1").hover(
-	function() {
-		$(".cell_1").animate({
-			width: "40px" //커질크기
-		}, 300); //속도(slow, fast, 숫자...)
-	},
-	function() {
-		$(".cell_1").animate({
-			width: "32px" //원래크기
-		}, 300); //속도(slow, fast, 숫자...)
-	}
-)

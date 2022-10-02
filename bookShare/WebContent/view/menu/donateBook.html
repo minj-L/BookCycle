@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Donate Book</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../css/mainPage/main.css">
+<link rel="stylesheet" href="../../css/common/commonMenu.css">
+<link rel="stylesheet" href="../../css/menu/donateBook.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<!-- 메뉴바 -->
+<header>
+	<div class="menu">
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="usedBookSell.html">책 판매</a></li>
+				<li><a href="shareBook.html">책 나눔</a></li>
+				<li><a href="donateBook.html">책 기부하기</a></li>
+				<li><a href="getOutBook.html">책 처분하기</a></li>
+			</ul>
+			<a id="pull" href="#"></a>
+		</nav>
+	</div>
+</header>
+<body>
+	<!-- 로고 -->
+	<div class="logo" style="text-align: center; cursor: pointer;"
+		onclick="usedBookSellToGoToMain()">
+		<img src="../../images/aviemua.png" />
+	</div>
+
+	<!-- 1. 지도 노드 -->
+	<div class="donateTitle">
+		<h1 style="color : #4b280a;">도서 기증처</h1>
+	</div>
+
+	<hr class="fisrt-hr">
+
+	<div class="map-frame">
+		<h1>국립 중앙 도서관</h1>
+		<hr>
+		<div id="daumRoughmapContainer1664710117890"
+			class="root_daum_roughmap root_daum_roughmap_landing"></div>
+	</div>
+	<div class="map-detail">
+		이용시간 : 10:00 ~ 18:00 <br /> 기증문의 : 02-590-0756 (장서개발과 이윤경 주무관) <br />
+		기증 가능 상태 : 최상 ~ 중
+	</div>
+
+	<div class="map-frame">
+		<h1>국회 도서관</h1>
+		<hr>
+		<div id="daumRoughmapContainer1664712668722"
+			class="root_daum_roughmap root_daum_roughmap_landing"></div>
+	</div>
+	<div class="map-detail">
+		이용시간 : 09:00 ~ 21:00 (열람신청 시간: 09:00 ~ 17:00) <br /> 기증문의 : 02-6788-4257 (자료수집과) <br />
+		기증 가능 상태 : 최상 ~ 상
+	</div>
+
+	<div class="map-frame">
+		<h1>국립 어린이 청소년 도서관</h1>
+		<hr>
+		<div id="daumRoughmapContainer1664712894706"
+			class="root_daum_roughmap root_daum_roughmap_landing"></div>
+	</div>
+	<div class="map-detail">
+		이용시간 : 10:00 ~ 18:00 <br /> 기증문의 : 02-3413-4870 (연구자료실) <br />
+		기증 가능 상태 : 최상 ~ 중
+	</div>
+
+	<!-- 하단 바 -->
+	<div class="footer">
+		<h1 id="quotes" class="quotes">인용문구가 들어갈 자리</h1>
+		<p id="author" class="author">작가가 들어갈 자리</p>
+	</div>
+
+	<!-- go to Main JS-->
+	<script type="text/javascript">
+		function usedBookSellToGoToMain() {
+			location.href = "../../index.html";
+		}
+	</script>
+
+	<!-- quotes JS-->
+	<script type="text/javascript">
+		var quote = document.getElementById('quotes');
+		var author = document.getElementById('author');
+		var arr = [
+				{
+					quote : "박제가 되어버린 천재를 아시오?",
+					author : "이상"
+				},
+				{
+					quote : "여성이 작가가 되기 위해서는 돈과 자기만의 방이 필요하다.",
+					author : "버지니아 울프"
+				},
+				{
+					quote : "One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.",
+					author : "Carl Sagan"
+				}, {
+					quote : "Books are a uniquely portable magic.",
+					author : "Stephen King"
+				}, {
+					quote : "Think before you speak. Read before you think.",
+					author : "Fran Lebowitz"
+				}, ];
+		var random = Math.floor(Math.random() * arr.length);
+		quotes.textContent = arr[random].quote;
+		author.textContent = arr[random].author;
+	</script>
+
+	<!-- Map Script -->
+	<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.-->
+	<script charset="UTF-8" class="daum_roughmap_loader_script"
+		src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+	<!-- 3. 국립 중앙 도서관 실행 스크립트 -->
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1664710117890",
+			"key" : "2bwab",
+			"mapWidth" : "640",
+			"mapHeight" : "360"
+		}).render();
+	</script>
+
+	<!-- 3. 국회 도서관 실행 스크립트 -->
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1664712668722",
+			"key" : "2bwaf",
+			"mapWidth" : "640",
+			"mapHeight" : "360"
+		}).render();
+	</script>
+
+	<!-- 3. 국립 어린이 청소년 도서관 실행 스크립트 -->
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1664712894706",
+			"key" : "2bwag",
+			"mapWidth" : "640",
+			"mapHeight" : "360"
+		}).render();
+	</script>
+</body>
+</html>

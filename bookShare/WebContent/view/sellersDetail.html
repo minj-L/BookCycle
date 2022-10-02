@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Seller Detail</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/mainPage/main.css">
 <link rel="stylesheet" href="../css/common/commonMenu.css">
 <link rel="stylesheet" href="../css/sellersDetail/sellersDetail.css">
 <link rel="stylesheet" href="../css/sellersDetail/sellerCarosel.css">
@@ -16,8 +16,8 @@
 			<ul class="clearfix">
 				<li><a href="menu/usedBookSell.html">책 판매</a></li>
 				<li><a href="menu/shareBook.html">책 나눔</a></li>
-				<li><a href="http://www._____.com/Travel">책 기부하기</a></li>
-				<li><a href="http://www._____.com/Contact">책 처분하기</a></li>
+				<li><a href="menu/donateBook.html">책 기부하기</a></li>
+				<li><a href="menu/getOutBook.html">책 처분하기</a></li>
 			</ul>
 			<a id="pull" href="#"></a>
 		</nav>
@@ -38,14 +38,14 @@
 				name="slide" id="slide03"> <input type="radio" name="slide"
 				id="slide04">
 			<ul class="slidelist">
-				<li class="slideitem"><a><img src="../images/1.jpg"></a>
+				<li class="slideitem"><a><img src="../images/7.jpg"></a>
 				</li>
-				<li class="slideitem"><a><img src="../images/2.jpg"></a>
-				</li>
-				<li class="slideitem"><a><img src="../images/3.jpg"></a>
-				</li>
-				<li class="slideitem"><a><img src="../images/slide04.jpg"></a>
-				</li>
+				<li class="slideitem"><a><img
+						src="../images/snowIsland2.png"></a></li>
+				<li class="slideitem"><a><img
+						src="../images/snowIsland2.png"></a></li>
+				<li class="slideitem"><a><img
+						src="../images/snowIsland3.jpg"></a></li>
 
 			</ul>
 			<div class="slide-control">
@@ -76,7 +76,7 @@
 		</div>
 		<div class="sellerProfileContnet">
 			<div class="sellerProfileContnet_1">밍지지</div>
-			<div class="sellerProfileContnet_1">화성시 장지동</div>
+			<div class="sellerProfileContnet_1">서울시 노원구</div>
 		</div>
 	</div>
 	<hr class="one" />
@@ -86,42 +86,45 @@
 		<div class="sellingBookContent2">
 			<div class="sellerProfileContnet2_1">
 				<div class="sellerProfileContnet2_2">
-					<h3>잃어버린 시간을 찾아서</h3>
+					<h3>설국</h3>
 				</div>
-				<div class="sellerProfileContnet2_2">마르셀 뒤펭</div>
+				<div class="sellerProfileContnet2_2" style="width:150px">가와타베 야스나리</div>
 				<div class="sellerProfileContnet2_2">민음사</div>
 			</div>
 			<div class="sellerProfileContnet2_1">
 				<div class="sellerProfileContnet2_2">
-					<h3>상태</h3>
+					<p style="font-weight: bold;">상태</p>
 				</div>
 				<div class="sellerProfileContnet2_2">최상</div>
 			</div>
 			<div class="sellerProfileContnet2_1">
 				<div class="sellerProfileContnet2_2">
-					<h3>구입일</h3>
+					<p style="font-weight: bold;">구입일</p>
 				</div>
 				<div class="sellerProfileContnet2_2">2020-07-08</div>
 			</div>
 			<div class="sellerProfileContnet2_1">
 				<div class="sellerProfileContnet2_2">
-					<h3>구입가</h3>
+					<p style="font-weight: bold;">구입가</p>
 				</div>
 				<div class="sellerProfileContnet2_2">20,000 원</div>
 			</div>
 			<div class="sellerProfileContnet2_1">
 				<div class="sellerProfileContnet2_2">
-					<h3>판매가</h3>
+					<p style="font-weight: bold;">판매가</p>
 				</div>
 				<div class="sellerProfileContnet2_2">10,000 원</div>
 			</div>
-			<div class="sellerProfileContnet2_1">
+			<div class="one">
 				<div class="sellerProfileContnet2_2">
-					<h3>제품 설명</h3>
+					<p style="font-weight: bold;">제품 설명</p>
 				</div>
-				<div class="sellerProfileContnet2_2"
-					style="overflow: scroll; width: 800px; height: 150px; padding: 10px;">
-					마들렌에 대한 이야기는 안하셨으면 좋겠어요</div>
+				<div class="two">
+					눈 앞에 눈밭이 펼쳐저 있는 듯한 생생함과<br/>
+					유려한 문장력이 인상깊었던 책이었습니다.<br/>
+					구입일이 오래되었기에 싸게 내놓습니다.<br/>
+				</div>
+				<div class="cover-bar"></div>
 			</div>
 		</div>
 	</div>
@@ -129,14 +132,39 @@
 
 	<!-- 하단 바 -->
 	<div class="footer">
-		<div class="quotes">
-			<p>It is because people have contact with the book and I learned
-				it, but it ﻿life.</p>
-			<p>- Anatole France</p>
-		</div>
+		<h1 id="quotes" class="quotes">인용문구가 들어갈 자리</h1>
+		<p id="author" class="author">작가가 들어갈 자리</p>
 	</div>
 
 	<!-- go to Main JS-->
-	<script type="text/javascript" src="../js/goToMain.js"></script>
+	<script type="text/javascript" src="../js/common/goToMain.js"></script>
+
+	<!-- quotes JS-->
+	<script type="text/javascript">
+		var quote = document.getElementById('quotes');
+		var author = document.getElementById('author');
+		var arr = [
+				{
+					quote : "박제가 되어버린 천재를 아시오?",
+					author : "이상"
+				},
+				{
+					quote : "여성이 작가가 되기 위해서는 돈과 자기만의 방이 필요하다.",
+					author : "버지니아 울프"
+				},
+				{
+					quote : "One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.",
+					author : "Carl Sagan"
+				}, {
+					quote : "Books are a uniquely portable magic.",
+					author : "Stephen King"
+				}, {
+					quote : "Think before you speak. Read before you think.",
+					author : "Fran Lebowitz"
+				}, ];
+		var random = Math.floor(Math.random() * arr.length);
+		quotes.textContent = arr[random].quote;
+		author.textContent = arr[random].author;
+	</script>
 </body>
 </html>
