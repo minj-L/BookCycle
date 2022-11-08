@@ -2,7 +2,7 @@
 ## Development   
 * HTML
 * JavaScript
-* JQuery   
+* JQuery 3.6.0   
 * Apache Tomcat v8.5
 ### Page routing path   
 ### Commit Message Convention   
